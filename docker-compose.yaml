@@ -18,7 +18,7 @@ services:
     image: mysql:5.7
     command: --ignore-db-dir=lost+found
     ports:
-      - 3306
+      - 3307
     volumes:
       - db_data:/var/lib/mysql
     restart: always
@@ -31,7 +31,7 @@ services:
     image: mysql:5.7
     command: --ignore-db-dir=lost+found
     ports:
-      - 3306
+      - 3308
     volumes:
       - db_data:/var/lib/mysql
     restart: always
