@@ -1,7 +1,7 @@
 version: "3.9"
     
 services:
-  db:
+  dbunu:
     image: mysql:5.7
     command: --ignore-db-dir=lost+found
     ports:
@@ -14,10 +14,36 @@ services:
       MYSQL_DATABASE: wordpress
       MYSQL_USER: wordpress
       MYSQL_PASSWORD: wordpress
-    
+  dbdoi:
+    image: mysql:5.7
+    command: --ignore-db-dir=lost+found
+    ports:
+      - 3306
+    volumes:
+      - db_data:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: somewordpress
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: wordpress
+  dbtrei:
+    image: mysql:5.7
+    command: --ignore-db-dir=lost+found
+    ports:
+      - 3306
+    volumes:
+      - db_data:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: somewordpress
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: wordpress
+      
   myapp:
     depends_on:
-      - db
+      - dbunu
     build:
       context: ./
     ports:
