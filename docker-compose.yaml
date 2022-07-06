@@ -14,7 +14,19 @@ services:
       MYSQL_DATABASE: wordpress
       MYSQL_USER: wordpress
       MYSQL_PASSWORD: wordpress
-    
+      VAR1: NULL
+      VAR2: Null
+      VAR3: null
+      VAR4: nULL
+      VAR5: "NULL"
+      VAR6: "Null"
+      VAR7: "null"
+      VAR8: "nULL"
+      VAR9: 'NULL'
+      VAR10: 'Null'
+      VAR11: 'null'
+      VAR12: 'nULL'
+      VAR13:
   myapp:
     depends_on:
       - db
