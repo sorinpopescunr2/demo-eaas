@@ -22,6 +22,8 @@ services:
       OVAR6: "Null"
       OVAR7: "null"
       OVAR8: "nULL"
+      OVAR8A: nUlL
+      OVAR8B: "nUlL"
       PVAR9: 'NULL'
       PVAR10: 'Null'
       PVAR11: 'null'
