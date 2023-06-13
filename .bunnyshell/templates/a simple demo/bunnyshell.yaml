@@ -5,7 +5,7 @@ VAR_DATABASE: wordpress
 components:
     -
         kind: Database
-        name: db
+        name: dbee
         gitRepo: 'https://github.com/sorinpopescunr2/demo-eaas.git'
         gitBranch: master
         dockerCompose:
