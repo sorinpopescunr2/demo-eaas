@@ -1,3 +1,17 @@
 name: 'demo-eaas folder NGINX Template 01 -test 1 333 444'
 description: 'This is just a simple NGINX template.'
 discoverable: true
+tags: [ nodejs, express, react, typescript, postgres ]
+icons: [ nodejs, express, react, typescript, postgres ]
+stack:
+  packages:
+    - name: Node.js
+      version: '18'
+    - name: Express
+      version: '4'
+    - name: React
+      version: '17'
+    - name: Typescript
+      version: '4.4'
+    - name: PostgreSQL
+      version: '15.2'
