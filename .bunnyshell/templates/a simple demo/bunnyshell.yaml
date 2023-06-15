@@ -7,7 +7,7 @@ components:
         kind: Database
         name: dbee
         gitRepo: 'https://github.com/sorinpopescunr2/demo-eaas.git'
-        gitBranch: master
+        gitBranch: masterqqq
         dockerCompose:
             command: '--ignore-db-dir=lost+found'
             environment:
@@ -28,7 +28,7 @@ components:
         kind: Application
         name: myapp
         gitRepo: 'https://github.com/sorinpopescunr2/demo-eaas.git'
-        gitBranch: master
+        gitBranch: masterqqq
         gitApplicationPath: /
         dockerCompose:
             build:
