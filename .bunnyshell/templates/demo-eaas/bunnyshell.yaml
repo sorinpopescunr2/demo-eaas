@@ -10,7 +10,7 @@ components:
         dockerCompose:
             command: '--ignore-db-dir=lost+found'
             environment:
-                MYSQL_DATABASE: wordpress
+                MYSQL_DATABASE: wordpressdddd
                 MYSQL_PASSWORD: wordpress
                 MYSQL_ROOT_PASSWORD: somewordpress
                 MYSQL_USER: wordpress
