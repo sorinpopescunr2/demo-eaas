@@ -1,6 +1,7 @@
 kind: Environment
 name: 'demo-eaas template 4'
 type: primary
+urlHandle: hello
 components:
     -
         kind: Database
